@@ -13,21 +13,22 @@ export const Footer = () => {
           </p>
         </div>
         <div>
-          <h4 className="mb-3 font-medium">Shop</h4>
+          <h4 className="mb-3 font-medium">Links</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/shop" className="hover:underline">All Products</Link></li>
-            <li><a className="hover:underline" href="#">Men</a></li>
-            <li><a className="hover:underline" href="#">Women</a></li>
-            <li><a className="hover:underline" href="#">Kids</a></li>
+            <li><Link to="/" className="hover:underline">Home</Link></li>
+            <li><Link to="/about" className="hover:underline">About Us</Link></li>
+            <li><Link to="/services" className="hover:underline">Our Services</Link></li>
+            <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+            <li><Link to="/shop" className="hover:underline">Shop</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="mb-3 font-medium">Company</h4>
           <ul className="space-y-2 text-sm">
-            <li><a className="hover:underline" href="#">About</a></li>
+            <li><Link className="hover:underline" to="/about">About</Link></li>
             <li><a className="hover:underline" href="#">Sustainability</a></li>
             <li><a className="hover:underline" href="#">Careers</a></li>
-            <li><a className="hover:underline" href="#">Contact</a></li>
+            <li><Link className="hover:underline" to="/contact">Contact</Link></li>
           </ul>
         </div>
         <div>

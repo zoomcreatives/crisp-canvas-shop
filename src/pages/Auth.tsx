@@ -15,9 +15,12 @@ const Auth = () => {
         </TabsList>
         <TabsContent value="login" className="mt-6">
           <div className="space-y-4">
-            <Input placeholder="Email" type="email" />
-            <Input placeholder="Password" type="password" />
+            <Input placeholder="Email" type="email" defaultValue="demo@demo.com" />
+            <Input placeholder="Password" type="password" defaultValue="123456" />
             <Button className="w-full">Login</Button>
+            <div className="rounded-md border bg-muted/30 p-3 text-xs text-muted-foreground">
+              Demo credentials — Email: demo@demo.com, Password: 123456
+            </div>
             <div className="grid grid-cols-2 gap-3">
               <Button variant="secondary">Google</Button>
               <Button variant="secondary">Apple</Button>

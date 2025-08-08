@@ -15,8 +15,8 @@ All colors MUST be HSL.
     --secondary: 158 60% 43%;         /* #2caf7f */
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 43 100% 50%;            /* #ffb800 */
-    --accent-foreground: 222.2 84% 4.9%;
+    --accent: 158 60% 43%;            /* brand accent (no yellow) */
+    --accent-foreground: 0 0% 100%;
 
     /* Surfaces */
     --background: 0 0% 100%;
@@ -76,7 +76,7 @@ All colors MUST be HSL.
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 43 95% 47%;
+    --accent: 158 60% 50%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 62.8% 30.6%;

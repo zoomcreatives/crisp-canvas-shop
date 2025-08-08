@@ -3,8 +3,6 @@ import { SEO } from "@/components/SEO";
 import { FiltersSidebar, Filters } from "@/components/FiltersSidebar";
 import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const initialFilters: Filters = {
   categories: new Set<string>(),
@@ -55,20 +53,10 @@ const Shop = () => {
       <SEO title="Shop | Crisp Canvas" description="Browse minimalist clothing for men, women and kids. Filter by category, size, color, and price." />
       <div className="mb-6 flex items-center justify-between">
         <h1 className="font-display text-2xl">Shop</h1>
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button className="md:hidden">Filters</Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-80">
-            <div className="mt-6">
-              <FiltersSidebar filters={filters} onChange={setFilters} />
-            </div>
-          </SheetContent>
-        </Sheet>
       </div>
 
       <div className="grid gap-10 md:grid-cols-[280px_1fr]">
-        <div className="hidden md:block">
+        <div>
           <FiltersSidebar filters={filters} onChange={setFilters} />
         </div>
 

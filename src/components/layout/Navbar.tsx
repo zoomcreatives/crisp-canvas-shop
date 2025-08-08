@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useCart } from "@/context/CartContext";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Navbar = () => {
   const { items } = useCart();
@@ -19,6 +20,9 @@ export const Navbar = () => {
           <Link to="/" className="font-display text-xl font-semibold">Crisp Canvas</Link>
           <nav className="hidden md:flex items-center gap-1">
             <NavLink to="/" end className={linkCls}>Home</NavLink>
+            <NavLink to="/about" className={linkCls}>About Us</NavLink>
+            <NavLink to="/services" className={linkCls}>Our Services</NavLink>
+            <NavLink to="/contact" className={linkCls}>Contact</NavLink>
             <NavLink to="/shop" className={linkCls}>Shop</NavLink>
           </nav>
         </div>
@@ -28,6 +32,7 @@ export const Navbar = () => {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input className="pl-9" placeholder="Search products" aria-label="Search" />
           </div>
+          <ThemeToggle />
           <Link to="/cart" className="relative">
             <Button variant="secondary" size="icon" aria-label="Cart" className="relative">
               <ShoppingCart className="h-5 w-5" />
@@ -41,6 +46,7 @@ export const Navbar = () => {
         </div>
 
         <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
           <Link to="/cart" className="relative">
             <Button variant="secondary" size="icon" aria-label="Cart" className="relative">
               <ShoppingCart className="h-5 w-5" />
@@ -65,6 +71,9 @@ export const Navbar = () => {
                 </div>
                 <nav className="flex flex-col gap-2">
                   <NavLink to="/" end className={linkCls}>Home</NavLink>
+                  <NavLink to="/about" className={linkCls}>About Us</NavLink>
+                  <NavLink to="/services" className={linkCls}>Our Services</NavLink>
+                  <NavLink to="/contact" className={linkCls}>Contact</NavLink>
                   <NavLink to="/shop" className={linkCls}>Shop</NavLink>
                   <NavLink to="/login" className={linkCls}>Login</NavLink>
                 </nav>
